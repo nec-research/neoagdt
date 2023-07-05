@@ -1,0 +1,18 @@
+optimization_settings:
+    MinSum.budget-10.adaptive:
+        criterion: MinSum
+        budget: 10
+        max_solving_time: 3600
+        simulation_config: ./etc/cells-config.yaml
+        cells_populations_file: ./analysis/cell/cell-populations.csv
+        approximate_vaccine_element_scores: "./analysis/approximate_scores/vaccine-elements.scores.{}.rep-{}.csv"
+        distance_from_self_scores: ./neoag_dt/data/distance-from-self.csv
+        distance_from_self_column: distance_from_self
+        weight_column: null
+        peptides_file: ./neoag_dt/data/peptide-sequences.csv
+        peptide_sequence_column: Mut_peptide
+        out: ./analysis/vaccines/selected-vaccine-elements.budget-10.minsum.adaptive.csv
+        vaccine_out: ./analysis/vaccines/vaccine.budget-10.minsum.adaptive.csv
+        p_response_factor: null
+        vaccine_elements: mutations
+        mutation_id_column: Mutation_ID

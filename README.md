@@ -4,7 +4,7 @@ A digital twin software framework for optimal neoantigen-based treatments.
 ### Installation
 `pip install .[all]`
 
-Requires Python 3.8
+Requires Python 3.9
 
 ---
 
@@ -53,12 +53,6 @@ cd neoag-digital-twin
 pylint neoag_dt
 ```
 
-### Docker
-To manually build a Docker image:
-```
-cd neoag-digital-twin
-docker build --tag neoag-digital-twin:<version> .
-```
 
 ### Documentation
 

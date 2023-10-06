@@ -13,5 +13,8 @@ from neoag_dt.cell.genetic_simulator import GeneticSimulator, GeneticSimulationR
 from neoag_dt.cell.peptide_mhc_binding_simulator import PeptideMHCBindingSimulator, pMHC
 from neoag_dt.cell.cell_factory import CellFactory
 from neoag_dt.peptide_vaccine import PeptideVaccine
+from neoag_dt.t_cell.t_cell_response_simulator import TCellResponseSimulator, TCellSimulationResults
+from neoag_dt.t_cell.t_cell import TCell
+from neoag_dt.t_cell.t_cell_activation_simulator import TCellActivationSimulator
 from neoag_dt.peptide_score_cache import PeptideScoreCache
 from neoag_dt.optimization.bipartite_ilp_model import BipartiteVaccineDesignModel

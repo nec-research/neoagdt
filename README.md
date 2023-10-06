@@ -1,10 +1,17 @@
 # neoag-digital-twin
 A digital twin software framework for optimal neoantigen-based treatments.
 
-### Installation
+### PIP installation
 `pip install .[all]`
 
-Requires Python 3.9
+### Conda installation
+Alternatively, we provide an Anaconda-based installation:
+
+```
+conda env create -f environment.yml
+```
+
+Python 3.9 is required.
 
 ---
 

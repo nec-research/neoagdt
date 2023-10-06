@@ -3,6 +3,6 @@ pandas
 scikit-learn
 scipy
 tqdm
-pyllars
-lifesci
+pyllars==1.0.5
+lifesci==0.3.2
 mip==1.13.0

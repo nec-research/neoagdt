@@ -60,7 +60,6 @@ cd neoag-digital-twin
 pylint neoag_dt
 ```
 
-
 ### Documentation
 
 The documentation project for this project can be built with `sphinx`. The necessary dependencies are install by pip

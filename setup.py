@@ -69,7 +69,8 @@ gpu_requires = []
 
 docs_require = [
     'sphinx==3.5.4',
-    'sphinx_rtd_theme'
+    'sphinx_rtd_theme',
+    'Jinja2<3.1'
 ]
 
 all_requires = (

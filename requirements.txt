@@ -6,3 +6,4 @@ tqdm
 pyllars==1.0.5
 lifesci==0.3.2
 mip==1.13.0
+jupyter==1.0.0

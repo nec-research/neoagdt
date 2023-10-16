@@ -1,6 +1,12 @@
 # neoag-digital-twin
 A digital twin software framework for optimal neoantigen-based treatments.
 
+![Workflow of NeoAgDT from sequencing data to vaccine composition. Variant/mutation calling and gene expression steps are not part of the pipeline but are shown for general
+understanding of data flow. NeoAgDT input data is shown as individual boxes (green) in the large box at the bottom left.](workflow_ndt.png)
+Workflow of NeoAgDT from sequencing data to vaccine composition. Variant/mutation calling and gene expression steps are not part of the pipeline but are shown for general
+understanding of data flow. NeoAgDT input data is shown as individual boxes (green) in the large box at the bottom left.
+
+
 ### PIP installation
 `pip install .[all]`
 

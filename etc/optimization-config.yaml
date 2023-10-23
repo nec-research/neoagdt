@@ -6,8 +6,8 @@ optimization_settings:
         simulation_config: ./etc/cells-config.yaml
         cells_populations_file: ./analysis/cell/cell-populations.csv
         approximate_vaccine_element_scores: "./analysis/approximate_scores/vaccine-elements.scores.{}.rep-{}.csv"
-        distance_from_self_scores: ./neoag_dt/data/distance-from-self.csv
-        distance_from_self_column: distance_from_self
+        distance_from_self_scores: null
+        distance_from_self_column: null
         weight_column: null
         peptides_file: ./neoag_dt/data/peptide-sequences.csv
         peptide_sequence_column: Mut_peptide

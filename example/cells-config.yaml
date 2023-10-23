@@ -1,0 +1,47 @@
+gene_file: genes.csv
+variant_file: variants.csv
+peptide_file: peptide-sequences.csv
+hla_file: hlas.csv
+
+binding_scores_file: binding-scores.csv
+presentation_scores_file: binding-scores.csv
+
+cells_out: results/cell-populations.csv
+
+gene_name_column: gene_id
+gene_expression_mean_column: FPKM
+gene_expression_var_column: FPKM_VAR
+gene_default_mean: 0
+gene_default_var: 1
+
+var_name_column: Mutation_ID
+var_gene_column: Gene_ID
+var_dna_ref: null
+var_dna_alt: null
+var_rna_ref: null
+var_rna_alt: null
+vaf: VAF
+
+peptide_sequence_column: Mut_peptide
+peptide_var_name_column: Mutation_ID
+
+hla_allele_name_column: allele_name
+hla_gene_name_column: gene_id
+
+binding_scores_allele_column_name: allele_name
+binding_scores_peptide_column_name: Mut_peptide
+binding_scores_score_column_name: binding_score
+
+cleavage_scores_allele_column_name: allele_name
+cleavage_scores_peptide_column_name: Mut_peptide
+cleavage_scores_score_column_name: cleavage_score
+
+presentation_scores_allele_column_name: allele_name
+presentation_scores_peptide_column_name: Mut_peptide
+presentation_scores_score_column_name: stability_score
+
+simulations:
+    -   simulation_name: "100-cells.10x"
+        simulation_num_cells: 100
+        simulation_expression_pseudocount: 1
+        num_repetitions: 10

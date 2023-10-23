@@ -21,6 +21,12 @@ pip install .  # install the neoagdt Python package (dependencies should already
 
 Python 3.9 is required.
 
+### Running setup.py
+```
+python setup.py build
+python setup.py install
+```
+
 ---
 ### Generation of input data
 Sample commands for running tools that have been used to create the data from Tran et al. 

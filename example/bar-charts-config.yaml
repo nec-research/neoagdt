@@ -1,0 +1,9 @@
+min_hotspot_uses: 1
+
+hue_order:
+    - 10-cells.10x
+
+simulation_settings:
+    MinSum.budget-10.adaptive:
+        selected_peptides: results/selected-vaccine-elements.budget-10.minsum.adaptive.csv
+        bar_chart: "results/bar-chart.budget-10.minsum.adaptive.png"

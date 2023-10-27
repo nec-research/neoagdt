@@ -1,0 +1,19 @@
+simulations : results/cell-populations.csv
+scores : "results/vaccine-elements.scores.{}.rep-{}.csv"
+
+final_response_out : results/final-response-likelihoods.csv
+sim_specific_response_out : results/sim-specific-response-likelihoods.csv
+box_plot_out : results/global/box-plot.png
+violin_plot_out : results/violin-plot.png
+bar_plot_out : .results/global/bar-plot.png
+line_plot_out : results/line-plot.png
+sim_specific_line_plot_out : "results/line-plot.{}.{}.png"
+
+final_vaccines:
+    MinSum.budget-10.adaptive: results/vaccine.budget-10.minsum.adaptive.csv
+
+sim_specific_vaccines:
+    MinSum.budget-10.adaptive: results/selected-vaccine-elements.budget-10.minsum.adaptive.csv
+
+population_sizes:
+    100-cells.10x: 100

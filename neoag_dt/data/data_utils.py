@@ -19,7 +19,7 @@ def _get_base_data_dir() -> pathlib.Path:
     return base_data_dir
 
 ###
-# Paths to files in the `neoag_dt/data` directory
+# Paths to files in the `example` directory
 ###
 def get_hlas_path() -> str:
     path = _get_base_data_dir() / "hlas.csv"

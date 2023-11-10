@@ -234,11 +234,11 @@ def get_optim_config(criterion: str = "MinSum") -> Mapping:
         "cells_populations_file": "./analysis/cell/cell-populations.csv",
         "vaccine_element_scores": None,
         "weight_column": None,
-        "peptides_file": "./neoag_dt/data/peptide-sequences.csv",
+        "peptides_file": "./example/peptide-sequences.csv",
         "peptide_sequence_column": "Mut_peptide",
         "out": "./analysis/vaccines/selected-vaccine-elements.budget-5.minsum.csv",
         "p_response_factor": 0.25,
-        "distance_from_self_scores": "./neoag_dt/data/distance-from-self.csv",
+        "distance_from_self_scores": "./example/distance-from-self.csv",
         "distance_from_self_column": "distance_from_self"
     }
 

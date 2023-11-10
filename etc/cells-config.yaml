@@ -1,10 +1,10 @@
-gene_file: ./neoag_dt/data/genes.csv
-variant_file: ./neoag_dt/data/variants.csv
-peptide_file: ./neoag_dt/data/peptide-sequences.csv
-hla_file: ./neoag_dt/data/hlas.csv
+gene_file: ./example/genes.csv
+variant_file: ./example/variants.csv
+peptide_file: ./example/peptide-sequences.csv
+hla_file: ./example/hlas.csv
 
-binding_scores_file: ./neoag_dt/data/peptide-hla-scores.csv
-presentation_scores_file: ./neoag_dt/data/peptide-hla-scores.csv
+binding_scores_file: ./example/binding-scores.csv
+presentation_scores_file: ./example/binding-scores.csv
 
 cells_out: ./analysis/cell/cell-populations.csv
 

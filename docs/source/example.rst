@@ -25,15 +25,14 @@ The first step of the analysis entails simulation of a set of cancer cells, i.e.
 the cancer digital twin. The ``simulate-cancer-cells`` script performs these
 simulations.
 
-The repository contains sample input files in ``neoag_dt/data``.
+The repository contains sample input files in ``example``.
 The major input files for this script are summarized in the following:
 
-* genes file (``/neoag_dt/data/genes.csv``): it contains gene expression information.
-* variants file (``/neoag_dt/data/variants.csv``): it contains information about the patient's variants.
-* peptides file (``/neoag_dt/data/peptide-sequences.csv``): it contains the peptides associated to each variant.
-* HLA file (``/neoag_dt/data/hlas.csv``): the patient's HLA alleles.
-* binding scores file (``/neoag_dt/data/peptide-hla-scores.csv``): predicted binding scores for each peptide to each HLA allele.
-* presentation scores file (``/neoag_dt/data/peptide-hla-scores.csv``): file containing the predicted presentation score for each peptide and each HLA allele.
+* genes file (``/example/genes.csv``): it contains gene expression information.
+* variants file (``/example/variants.csv``): it contains information about the patient's variants.
+* peptides file (``/example/peptide-sequences.csv``): it contains the peptides associated to each variant.
+* HLA file (``/example/hlas.csv``): the patient's HLA alleles.
+* binding scores file (``/example/binding-scores.csv``): predicted binding scores for each peptide to each HLA allele and predicted presentation score for each peptide and each HLA allele.
 
 The paths to these files can be set in a dedicated configuration file, which is
 passed via command line (see below). Please see the :doc:`./simulations` documentation for an exact
@@ -55,29 +54,7 @@ Each cell is a set of presented peptide-MHC (pMHC) complexes.
 Optimize vaccine designs according to the simulated cancer digital twin
 --------------------------------------------------------------------------
 
-The second step of the analysis is meant to select the optimal vaccine elements for each
-of the simulated populations. In addition to the population, the optimization algorithm also includes a "budget".
-By default, the budget indicates the number of vaccine elements which can be included.
-
-The optimization algorithm is, generally, deterministic. Thus, it is not
-normally needed to run it multiple times for the same population, set of scores,
-and budget.
-
-The repository contains the configuration file ``optimization-config.yaml``.
-Most interestingly, the optimization can be solved in the peptides space, setting ``vaccine_elements: peptides``,
-or in the mutation space, setting ``vaccine_elements: mutations``.
-Since multiple populations of cells were simulated at the previous step, multiple
-optimization problems are solved, one for each population.
-
-First, the optimization module estimates the likelihood of immune response for the vaccine
-elements, either peptides, or mutations. The core intuition is that, the more
-a peptide is presented, the higher is the likelihood that including that peptide (or the
-relative mutation) in a vaccine will elicit immune response. Optionally, the optimization module
-can also approximate TCR recognition, by using distance-from-self as a
-proxy (``/neoag_dt/data/distance-from-self.csv`` or leave as ``None`` to skip).
-Afterwards, the optimization selects the optimal subset of vaccine elements which maximizes
-the likelihood of immune response based on the approximated scores. The optimization consists
-in a max flow problem, solved via integer linear programming (ILP).
+The optimization can be run using the following command:
 
 .. code-block::
 

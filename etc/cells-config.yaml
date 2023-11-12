@@ -16,11 +16,11 @@ gene_default_var: 1
 
 var_name_column: Mutation_ID
 var_gene_column: Gene_ID
-var_dna_ref: WXS_tumor_depth_ref
-var_dna_alt: WXS_tumor_depth_alt
-var_rna_ref: RNA_tumor_depth_ref
-var_rna_alt: RNA_tumor_depth_alt
-vaf: null
+var_dna_ref: null
+var_dna_alt: null
+var_rna_ref: null
+var_rna_alt: null
+vaf: VAF
 
 peptide_sequence_column: Mut_peptide
 peptide_var_name_column: Mutation_ID
@@ -38,7 +38,7 @@ cleavage_scores_score_column_name: cleavage_score
 
 presentation_scores_allele_column_name: allele_name
 presentation_scores_peptide_column_name: Mut_peptide
-presentation_scores_score_column_name: presentation_score
+presentation_scores_score_column_name: stability_score
 
 simulations:
     -   simulation_name: "1000-cells.10x"

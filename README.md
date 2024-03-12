@@ -73,6 +73,14 @@ evaluate-vaccine-response etc/response-likelihood-config.yaml --logging-level IN
 ```
 ---
 
+### Running everything at once
+
+You can run all above-mentioned steps (simulation, optimization, evaluation and plotting) with the following command:
+```
+bash ./run-sim.sh
+```
+---
+
 ### Execute unit tests
 ```
 pip install .[test]
